@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Sasta Grofers</string>
+    <string name="add_to_cart">Add To Cart</string>
+    <string name="enter_product_name">Enter Product Name</string>
+    <string name="enter_quantity">Enter Quantity</string>
+    <string name="enter_price">Enter Price</string>
+    <string name="cancel">Cancel</string>
+    <string name="add">Add</string>
+</resources>

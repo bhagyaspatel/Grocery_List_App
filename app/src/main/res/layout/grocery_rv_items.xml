@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_margin="8dp"
+    android:backgroundTint="@color/blue_shade_2"
+    app:cardCornerRadius="5dp"
+    app:cardElevation="4dp">
+
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="5"
+            android:id="@+id/LL1">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="2"
+                android:text="Product"
+                android:textColor="@color/white"
+                android:padding="4dp"
+                android:layout_margin="3dp"
+                android:id="@+id/productName" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:id="@+id/Quantity"
+                android:text="Quantity"
+                android:textColor="@color/white"
+                android:padding="4dp"
+                android:layout_margin="3dp"/>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:padding="4dp"
+                android:layout_margin="3dp"
+                android:id="@+id/itemRate"
+                android:textColor="@color/white"
+                android:text="Rate"/>
+
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.5"
+                android:padding="4dp"
+                android:layout_margin="3dp"
+                android:id="@+id/deleteIcon"
+                android:src="@drawable/ic_delete_icon"
+                app:tint="@color/white" />
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="4dp"
+            android:layout_below="@id/LL1"
+            android:layout_margin="3dp"
+            android:id="@+id/totalCost"
+            android:text="Total Cost"
+            android:layout_toLeftOf="@id/totalAmt"
+            android:textColor="@color/white"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/totalAmt"
+            android:padding="4dp"
+            android:layout_margin="3dp"
+            android:layout_below="@id/LL1"
+            android:layout_alignParentEnd="true"
+            android:textColor="@color/white"
+            android:text="Amt"/>
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>
